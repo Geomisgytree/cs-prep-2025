@@ -2,8 +2,10 @@
 - **git branch**: to see the existing branches
 - **git checkout**: switch between branches. "-b": create new branch (e.g., git checkout -b feature-readme_instructions)
 - **git status**: check modification/add status of files
+- **git add**: track the file before save to git (e.g., git add .)
 - **git commit**: commit all the changes
 - **git reset HEAD~1**: undo the last commit
 - **git log**: commit logs in chronological order
 - **git diff**: show the lines of changes in a branch
 - **git push**: push the changes onto github
+- A change
