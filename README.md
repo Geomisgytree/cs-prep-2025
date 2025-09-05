@@ -12,5 +12,3 @@
 ## Progress
 See `progress.md`.
 
-## Final
-This is a very easy demo.
