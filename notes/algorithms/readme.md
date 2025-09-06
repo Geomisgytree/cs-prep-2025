@@ -1,5 +1,4 @@
-# AVL, MST, Dijkstra, DP
-
+# Algorithms
 This is a readme that includes notes of different algorithms.
 
 # Table of Contents
@@ -37,6 +36,22 @@ Find the smallest unsorted element and add it to the end of the sorted list.
   }
 
 
+## AVL (Self-Balancing BST)
+
+CLRS ch13-14
+
+## MST (Minimum Spanning Tree)
+
+CLRS Ch23
+
+## Dijkstra Algorithm
+
+CLRS ch24
+
+## Dynamic Programming (DP)
+
+CLRS ch15
 
 
-*Reference: CS50*
+*Reference:*
+- Introduction to Algorithms, third edition
