@@ -1,4 +1,5 @@
 # CS Prep 2025
+*Starting: 09/03/2025*
 - Goal: OMSCS prep (Java + DSA + Algorithms)
 - Milestones: AVL, Dijkstra, MST, DP
 - How to run: (fill later)

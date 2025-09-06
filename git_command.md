@@ -1,5 +1,5 @@
 # Git commands documentation
-- **git add**: After you update the files/folders locally, track the file before save to git (e.g., git add .)
+- **git add**: After you update the files/folders locally, track the file before saving to git (e.g., git add .)
 - **git status**: After "git add", you can check modification/add status of files using "git status"
 - **git commit**: commit all the changes (e.g., git commit -m "YOUR MESSAGE")
 - **git push**: push the changes onto github (e.g., git push origin main)
