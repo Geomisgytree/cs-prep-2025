@@ -1,3 +1,9 @@
-## Data structure
+# Data structure
 
-This is a readme that includes notes of different algorithms.
+## arrays, linked_lists, stacks_queues, trees, graphs, dp
+
+
+
+
+
+*References: 《Grokking Algorithms》 by Aditya Y. Bhargava*
