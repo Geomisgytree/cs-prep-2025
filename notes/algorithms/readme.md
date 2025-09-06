@@ -2,6 +2,10 @@
 
 This is a readme that includes notes of different algorithms.
 
+# Table of Contents
+- [Selection Sort](#selection-sort)
+- [Recursion](#recursion)
+
 ## Selection Sort
 
 Find the smallest unsorted element and add it to the end of the sorted list.
@@ -32,7 +36,7 @@ Find the smallest unsorted element and add it to the end of the sorted list.
     else return n * fact(n-1);
   }
 
-  
+
 
 
 *Reference: CS50*
