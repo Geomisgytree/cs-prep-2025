@@ -91,6 +91,24 @@ typedef struct _queue
 queue;
 ```
 
+## Hash Tables
+- Combine the **random access** ability of an array with the **dynamism** of a linked list
+- Insertion, Deletion, Lookup can start to tend toward **constant time $\theta(1)$
+- Combine two things:
+  - A **hash function** returning an nonnegative integer value called a *hash code*
+  - An array capable of storing data of the type we wish to place into the data structure
+  - The idea: Run data through the hash function, then store the data in the element of the array represented by the returned hash code
+```java
+  int y = hash("Paul");
+  // y is now 6
+  hashtable[y] = "Paul";
+```
+- **Collision**: A collision occurs when two pieces of data, when run through the hash function, yield the same code.
+- **Linear probing**: If we have a collision, we try to place the data in the next consecutive element in the array until we find a vacancy.
+- Resolve collisions: **Chaining** - What if each element of the array is a *pointer to the head of a linked list*, then multiple pieces of data can yield the same hash code and we will be able to store it all.
+
+
+
 ## Trees and Binary-Search Trees
 
 
