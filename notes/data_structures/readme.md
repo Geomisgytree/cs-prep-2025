@@ -42,7 +42,54 @@ sllnode; // create the name of the data type
   void destroy(sllnode* head); // If you've reached a null pointer, stop. Delete the rest of the list
   ```
 
+### Doubly Linked Lists
+```java
+typedef struct sllist {
+    VALUE val; // VALUE is an arbitrary data type
+    struct sllist* prev; // be able to move backwards
+    struct sllist* next; // pointer to another node of the same type
+}
+sllnode; // create the name of the data type
+```
+- Insert a new node into the linked list
+```java
+dllnode* insert(dllnode* head, VALUE val); // Fix the prev pointer of the old head of the linked list
+```
+- Delete a single element from a linked list
+```java
+void delete(dllnode* target) // Fix the pointers of the surrounding nodes to "skip over" target
+```
 
+## Stacks
+- Commonly implemented in one of the two ways: as an **array** or as a **linked list**
+- Last in, first out (LIFO)
+- Only two operations legally be performed:
+  - Push: Add a new element to the top of the stack
+  ```java
+  void push(stack* s, VALUE data);
+  ```
+  - Pop: Remove the most recently-added element from the top of the stack
+- Array-based implementation
+```java
+typedef struct _stack
+{
+    VALUE array[CAPACITY];
+    int top; // the top of the elements
+}
+stack;
+```
+
+## Queues
+- First in, first out (FIFO)
+```java
+typedef struct _queue
+{
+    VALUE array[CAPACITY];
+    int front;
+    int size;
+}
+queue;
+```
 
 ## Trees and Binary-Search Trees
 
