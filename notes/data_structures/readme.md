@@ -135,8 +135,8 @@ queue;
 - Max number of nodes at level i: $2^i$
 - Max number of nodes in a binary tree with height h = $2^0 + 2^1 + \cdots + 2^h = 2^{h+1} - 1$
 - Height of perfect binary tree with n nodes = $log_2(n+1) - 1$
-- **Min-height** Binary tree complexity: O(log_2{n}) - we want to keep to height of a binary tree minimum possible
-- **Max-height**: O(n)
+- **Min-height** Binary tree complexity: $O(log_2{n})$ - we want to keep to height of a binary tree minimum possible
+- **Max-height**: $O(n)$
 - **Height**: Number of edges in longest path from root to a leaf
 - **Balanced binary tree**:For every node, difference between height of left and right subtree is not more than k (mostly 1)
   - Diff = $|h_{left} - h_{right}|$
