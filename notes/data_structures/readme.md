@@ -92,16 +92,36 @@ queue;
 ```
 
 ## Hash Tables
+- A data structure that stores unique keys to values ex. Integer, String. Each Key-value pair is known as an Entry
 - Combine the **random access** ability of an array with the **dynamism** of a linked list
 - Insertion, Deletion, Lookup can start to tend toward **constant time $\theta(1)$
 - Combine two things:
-  - A **hash function** returning an nonnegative integer value called a *hash code*
+  - A **hash function** returning an nonnegative integer value called a *hash code*. **Hashing**: Takes a key and computes an integer. In the hashtable, we use the hash % capacity to calculate an index number.
+    - key.hashCode() % capacity = index
   - An array capable of storing data of the type we wish to place into the data structure
   - The idea: Run data through the hash function, then store the data in the element of the array represented by the returned hash code
+  - Runtime complexity: Best case O(1), Worst case O(n)
 ```java
   int y = hash("Paul");
   // y is now 6
   hashtable[y] = "Paul";
+
+  // Implementation
+  Hashtable<String, String> table = new Hashtable<>(10);
+  // Add elements to the hash table
+  table.put("100", "Spongebob");
+  table.put("123", "Patrick");
+  table.put("321", "Sandy");
+  table.put("555", "Squidward");
+  table.put("777", "Gary");
+
+  // table.remove(777); // remove the 777 key
+  // Print all the key-value pairs
+  for(Integer key : table.keySet()){
+    System.out.println(key.hashCode() % 10 + "\t" + key + "\t" + table.get()); // hashcode + key + value
+    // IMPORTANT: Different data type will have different hash code formulas
+  }
+
 ```
 - **Collision**: A collision occurs when two pieces of data, when run through the hash function, yield the same code.
 - **Linear probing**: If we have a collision, we try to place the data in the next consecutive element in the array until we find a vacancy.
