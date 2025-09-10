@@ -133,8 +133,8 @@ queue;
 - Each node can have **at most** 2 children - left child + right child
 - Leaf node: nodes that don't have children
 - Max number of nodes at level i: $2^i$
-- Max number of nodes in a binary tree with height h = 2^0 + 2^1 + ... + 2^h = 2^(h+1) - 1
-- Height of perfect binary tree with n nodes = log_n^(n+1) - 1
+- Max number of nodes in a binary tree with height $$h = 2^0 + 2^1 + ... + 2^h = 2^(h+1) - 1$$
+- Height of perfect binary tree with n nodes = $$log_n^(n+1) - 1$$
 
 
 
