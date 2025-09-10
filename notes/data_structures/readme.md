@@ -94,7 +94,7 @@ queue;
 ## Hash Tables
 - A data structure that stores unique keys to values ex. Integer, String. Each Key-value pair is known as an Entry
 - Combine the **random access** ability of an array with the **dynamism** of a linked list
-- Insertion, Deletion, Lookup can start to tend toward **constant time $\theta(1)$
+- Insertion, Deletion, Lookup can start to tend toward **constant time $\theta(1)$**
 - Combine two things:
   - A **hash function** returning an nonnegative integer value called a *hash code*. **Hashing**: Takes a key and computes an integer. In the hashtable, we use the hash % capacity to calculate an index number.
     - key.hashCode() % capacity = index
@@ -129,7 +129,13 @@ queue;
 
 
 
-## Trees and Binary-Search Trees
+## Binary Trees
+- Each node can have **at most** 2 children - left child + right child
+- Leaf node: nodes that don't have children
+- Max number of nodes at level i: $2^i$
+- Max number of nodes in a binary tree with height h = 2^0 + 2^1 + ... + 2^h = 2^(h+1) - 1
+- Height of perfect binary tree with n nodes = log_n^(n+1) - 1
+
 
 
 

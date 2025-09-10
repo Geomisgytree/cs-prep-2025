@@ -38,7 +38,6 @@ Find the smallest unsorted element and add it to the end of the sorted list.
 
 ## AVL (Self-Balancing BST)
 
-CLRS ch13-14
 
 ## MST (Minimum Spanning Tree)
 
