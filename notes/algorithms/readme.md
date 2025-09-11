@@ -37,7 +37,14 @@ Find the smallest unsorted element and add it to the end of the sorted list.
 
 
 ## AVL (Self-Balancing BST)
+Rotations are performed only on three nodes.
+AVL tree is a height-balanced BST (Binary Search Tree).
+- Calculate **balance factor** for each node: height of left subtree - height of right subtree = {-1, 0, 1}
+- LL Rotation, LR Rotation, RR Rotation, RL Rotation
+- If multiple nodes are imbalanced, from the **latest inserted node**, trace back to the **first imbalanced node**. That node will be where we should perform rotation.
+- Complexity: O(log(n))
 
+@youtube 10.1 AVL Tree - Insertion and Rotations by Abdul Bari
 
 ## MST (Minimum Spanning Tree)
 
