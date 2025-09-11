@@ -1,4 +1,5 @@
 # Git commands documentation
+- **git clone**: Clone a remote repository
 - **git add**: After you update the files/folders locally, track the file before saving to git (e.g., git add .)
 - **git status**: After "git add", you can check modification/add status of files using "git status"
 - **git commit**: commit all the changes (e.g., git commit -m "YOUR MESSAGE")
