@@ -44,11 +44,20 @@ AVL tree is a height-balanced BST (Binary Search Tree).
 - If multiple nodes are imbalanced, from the **latest inserted node**, trace back to the **first imbalanced node**. That node will be where we should perform rotation.
 - Complexity: O(log(n))
 
-@youtube 10.1 AVL Tree - Insertion and Rotations by Abdul Bari
+@youtube 10.1 AVL Tree - Insertion and Rotations by Abdul Bari [link](https://www.youtube.com/watch?v=jDM6_TnYIqE)
 
 ## MST (Minimum Spanning Tree)
+- Graph is represented by: G = (V,E), V = {1,2,3,4,5,6}, E = {(1,2), (2,3), (3,4), ...}, n = 6 (number of vertices)
+- **Spanning tree**: subgraph of a graph - take all vertices but a (n-1 = 5) edges
+  - 6C5 ways (from 6 edges, choose 5 edges) = 6 different spanning trees
+  - Generalization: $$C^{\text{Number of edges}}_{\text{Number of edges - 1}} - \text{Number of cycles}$$
+  - **Minimum Spanning Tree**: Cost of the spanning tree will be varying. Find the minimum cost spanning tree: Using greedy method: 1) Prim's; 2) Kruskals
+    - *Prim's Algorithm:* Select a minimum cost edge first, then, always select minimum cost edges that will connect to the previous edge.
+    - *Kruskals Method*: Find the minimum cost edge first, and then select all the edges that have the minimum costs. Don't include the edge if it forms a cycle. Complexity: $O(n^2)$
 
-CLRS Ch23
+@youtube Prims and Kruskals Algorithms - Greedy Method [link](https://www.youtube.com/watch?v=4ZlRH0eK-qQ)
+@youtube Graphs - Data Structures in 5 Minutes by Dickson Tsai [link](https://www.youtube.com/watch?v=vfCo5A4HGKc)
+@CLRS Ch23
 
 ## Dijkstra Algorithm
 
