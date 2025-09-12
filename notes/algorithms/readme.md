@@ -49,8 +49,8 @@ AVL tree is a height-balanced BST (Binary Search Tree).
 ## MST (Minimum Spanning Tree)
 - Graph is represented by: G = (V,E), V = {1,2,3,4,5,6}, E = {(1,2), (2,3), (3,4), ...}, n = 6 (number of vertices)
 - **Spanning tree**: subgraph of a graph - take all vertices but a (n-1 = 5) edges
-  - 6C5 ways (from 6 edges, choose 5 edges) = 6 different spanning trees
-  - Generalization: $$C^{\text{Number of edges}}_{\text{Number of edges - 1}} - \text{Number of cycles}$$
+  - $C^6_5 ways (from 6 edges, choose 5 edges) = 6 different spanning trees
+  - Generalization: $$C^{\text{Number of edges - 1}}_{\text{Number of edges}} - \text{Number of cycles}$$
   - **Minimum Spanning Tree**: Cost of the spanning tree will be varying. Find the minimum cost spanning tree: Using greedy method: 1) Prim's; 2) Kruskals
     - *Prim's Algorithm:* Select a minimum cost edge first, then, always select minimum cost edges that will connect to the previous edge.
     - *Kruskals Method*: Find the minimum cost edge first, and then select all the edges that have the minimum costs. Don't include the edge if it forms a cycle. Complexity: $O(n^2)$
