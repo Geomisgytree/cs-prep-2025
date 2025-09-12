@@ -55,8 +55,9 @@ AVL tree is a height-balanced BST (Binary Search Tree).
     - *Prim's Algorithm:* Select a minimum cost edge first, then, always select minimum cost edges that will connect to the previous edge.
     - *Kruskals Method*: Find the minimum cost edge first, and then select all the edges that have the minimum costs. Don't include the edge if it forms a cycle. Complexity: $O(n^2)$
 
-@youtube Prims and Kruskals Algorithms - Greedy Method [link](https://www.youtube.com/watch?v=4ZlRH0eK-qQ)
-@youtube Graphs - Data Structures in 5 Minutes by Dickson Tsai [link](https://www.youtube.com/watch?v=vfCo5A4HGKc)
+References:
+1. @youtube Prims and Kruskals Algorithms - Greedy Method [link](https://www.youtube.com/watch?v=4ZlRH0eK-qQ)
+2. @youtube Graphs - Data Structures in 5 Minutes by Dickson Tsai [link](https://www.youtube.com/watch?v=vfCo5A4HGKc)
 @CLRS Ch23
 
 ## Dijkstra Algorithm
