@@ -58,7 +58,7 @@ AVL tree is a height-balanced BST (Binary Search Tree).
 References:
 1. @youtube Prims and Kruskals Algorithms - Greedy Method [link](https://www.youtube.com/watch?v=4ZlRH0eK-qQ)
 2. @youtube Graphs - Data Structures in 5 Minutes by Dickson Tsai [link](https://www.youtube.com/watch?v=vfCo5A4HGKc)
-@CLRS Ch23
+3. @CLRS Ch23 [link](https://www.cs.mcgill.ca/~akroit/math/compsci/Cormen%20Introduction%20to%20Algorithms.pdf)
 
 ## Dijkstra Algorithm
 
