@@ -152,6 +152,23 @@ queue;
   - Arrays: used for heaps
     - For a complete binary tree: for node at index i, left-child-index = 2i+1, right-child-index = 2i+2
 
+### Binary Search Tree (BST)
+- Time complexity: Average: $O(log(n))$, WorstL $O(n)$
+- **Search** in a binary search tree: 
+  ```java
+  public void add(int data):
+      root <- rAdd(root, data)
+  private Node rAdd(Node curr, int data):
+      if curr == null:
+        size ++
+        return new Node(data);
+      else if data < curr.data:
+        curr.left <- rAdd(curr.left, data)
+        curr.right <- rAdd(curr.right, data)
+      return curr
+  ```
+- **Remove** in a binary search tree:
+  
 
 
 
