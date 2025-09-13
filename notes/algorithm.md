@@ -62,16 +62,25 @@ References:
 
 ## Dijkstra Algorithm
 
-Relaxation:
+Single Source Shortest Path - Greedy Method
+
+**Relaxation**:
+- Assume that u-->v (Two nodes), d(): distance on this node
 - If (d[u] + c(u, v) < d[v]) {d[v] = d[u] + c(u, v)}
 
 References:
 1. @CLRS ch24
+2. @youtube 3.6 Dijkstra Algorithm - Single Source Shortest Path - Greedy Method [link](https://www.youtube.com/watch?v=XB4MIexjvY0&t=571s)
+
+
 
 ## Dynamic Programming (DP)
+- Greedy Method and DP are useful for solving optimization problems
+- **Dynamic Programming**: Principle of optimality - sequence of decisions
 
-CLRS ch15
+
 
 
 *Reference:*
-- Introduction to Algorithms, third edition
+1. Introduction to Algorithms, third edition
+2. CLRS ch15
