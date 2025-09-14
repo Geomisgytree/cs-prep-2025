@@ -19,5 +19,18 @@ This is a document that includes four principles of OOP (encapsulation, abstract
 
 ## Polymorphism
 - When we define a supertype for a group of classes, any subclass of that supertype can be substituted where the supertype is expected.
+- With polymorphism, the reference and the object can be different. You can write code that doesn't have to change when you introduce new subclass types into the program.
+```java
+Animal[] animals = new Animal[5]; // Declare an array of type Animal. In other words, an array that will hold objects of type animal
+animals[0] = new Dog(); // Put ANY subclass of Animal in the Animal array
+animals[1] = new Cat();
+animals[2] = new Wolf();
+animals[3] = new Hippo();
+animals[4] = new Lion();
+for (int i = 0; i < animals.length; i++){ // Get to loop through the array and call one of the Animal-class methods, and every subject does the right thing
+  animals[i].eat(); // i = 0: Dog's eat method; i = 1: Cat's eat method
+  animals[i].roam();
+}
+```
 
 
