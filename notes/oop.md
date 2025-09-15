@@ -32,5 +32,43 @@ for (int i = 0; i < animals.length; i++){ // Get to loop through the array and c
   animals[i].roam();
 }
 ```
+- Types: Overriding and Overloading
+  - Overriding: Methods were defined in a class, and subclass can use its own way for realization.
+  ```java
+  class Animal {
+    void speak() {
+        System.out.println("Some sound");
+    }
+  }  
 
+  class Dog extends Animal {
+      void speak() {
+          System.out.println("Woof");
+      }
+  }
+
+  class Cat extends Animal {
+      void speak() {
+          System.out.println("Meow");
+      }
+  }
+
+  public class Main {
+      public static void main(String[] args) {
+          Animal a1 = new Dog();
+          Animal a2 = new Cat();
+          a1.speak(); // Output Woof
+          a2.speak(); // output Meow
+      }
+  }
+  ```
+  - Overloading: In the same class, the name of the methods are the same, but the parameters are different. Compiler will decide which method to use.
+  ```java
+  class MathUtils {
+    int add(int a, int b) { return a + b; }
+    double add(double a, double b) { return a + b; }
+  }
+  ```
+
+## Abstraction
 
