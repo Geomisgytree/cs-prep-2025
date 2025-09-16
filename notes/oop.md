@@ -34,46 +34,47 @@ for (int i = 0; i < animals.length; i++){ // Get to loop through the array and c
 ```
 - Types: Overriding and Overloading
   - **Overriding**: Methods were defined in a class, and subclass can use its own way for realization.
-  ```java
-  class Animal {
-    void speak() {
-        System.out.println("Some sound");
+    ```java
+    class Animal {
+      void speak() {
+          System.out.println("Some sound");
+      }
+    }  
+
+    class Dog extends Animal {
+        void speak() {
+            System.out.println("Woof");
+        }
     }
-  }  
 
-  class Dog extends Animal {
-      void speak() {
-          System.out.println("Woof");
-      }
-  }
+    class Cat extends Animal {
+        void speak() {
+            System.out.println("Meow");
+        }
+    }
 
-  class Cat extends Animal {
-      void speak() {
-          System.out.println("Meow");
-      }
-  }
-
-  public class Main {
-      public static void main(String[] args) {
-          Animal a1 = new Dog();
-          Animal a2 = new Cat();
-          a1.speak(); // Output Woof
-          a2.speak(); // output Meow
-      }
-  }
-  ```
+    public class Main {
+        public static void main(String[] args) {
+            Animal a1 = new Dog();
+            Animal a2 = new Cat();
+            a1.speak(); // Output Woof
+            a2.speak(); // output Meow
+        }
+    }
+    ```
   - **Overloading**: In the same class, the name of the methods are the same, but the parameters are different. Compiler will decide which method to use.
-  ```java
-  class MathUtils {
-    int add(int a, int b) { return a + b; }
-    double add(double a, double b) { return a + b; }
-  }
-  ```
+    ```java
+    class MathUtils {
+      int add(int a, int b) { return a + b; }
+      double add(double a, double b) { return a + b; }
+    }
+    ```
 
 ## Abstraction
 - There are **abstract** classes and methods.
 - By marking the class as abstract, the compiler will stop any code, anywhere , from ever creating an instance of that type.
   - Classes can abstract or **concrete**.
+  - If you don't want a class to be instantiated, (you don't want anyone to make a new object of that class type) mark the class with the **abstract** keyword.
   ```java
   abstract class Canine extends Animal {
     public void roam() { }
@@ -84,10 +85,17 @@ for (int i = 0; i < animals.length; i++){ // Get to loop through the array and c
   ```java
   public abstract void eat();
   ```
-- In java *Interface*, all the methods are **abstract** to solve the multiple inheritance problem.
+- In java *Interface*, all the methods are **abstract** to solve the multiple inheritance problem. This way, the subclass must implement the methods (abstract methods must be implemented by the first concrete subclass), so at runtime the JVM isn't confused about which of the two inherited versions it's supposed to call.
   ```java
   public interface Pet {
-    
+    public abstract void beFriendly(); // All interface methods are abstract, and they have no body
+    public abstract void play();
+  }
+  public class Dog extends Canine implements Pet {
+    public void beFriendly(){ ... } // We have curly braces here
+    public void play(){ ... }
+    public void roam(){ ... } // Overriding methods
+    public void eat(){ ... } // Overriding methods
   }
   ```
 
