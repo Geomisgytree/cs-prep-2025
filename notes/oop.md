@@ -33,7 +33,7 @@ for (int i = 0; i < animals.length; i++){ // Get to loop through the array and c
 }
 ```
 - Types: Overriding and Overloading
-  - Overriding: Methods were defined in a class, and subclass can use its own way for realization.
+  - **Overriding**: Methods were defined in a class, and subclass can use its own way for realization.
   ```java
   class Animal {
     void speak() {
@@ -62,7 +62,7 @@ for (int i = 0; i < animals.length; i++){ // Get to loop through the array and c
       }
   }
   ```
-  - Overloading: In the same class, the name of the methods are the same, but the parameters are different. Compiler will decide which method to use.
+  - **Overloading**: In the same class, the name of the methods are the same, but the parameters are different. Compiler will decide which method to use.
   ```java
   class MathUtils {
     int add(int a, int b) { return a + b; }
@@ -71,4 +71,23 @@ for (int i = 0; i < animals.length; i++){ // Get to loop through the array and c
   ```
 
 ## Abstraction
+- There are **abstract** classes and methods.
+- By marking the class as abstract, the compiler will stop any code, anywhere , from ever creating an instance of that type.
+  - Classes can abstract or **concrete**.
+  ```java
+  abstract class Canine extends Animal {
+    public void roam() { }
+  }
+  ```
+  - An **abstract class** has virtually no use, no value, no purpose in life, unless it's **extended**. With an abstract class, the guys doing the work at runtime are instances of a subclass of your abstract class.
+- An abstract method has no body. No curly braces - just end the declaration with a **semicolon**. An abstract method should be placed in the **abstract class** as well. We can't have an abstract method in a non-abstract class.
+  ```java
+  public abstract void eat();
+  ```
+- In java *Interface*, all the methods are **abstract** to solve the multiple inheritance problem.
+  ```java
+  public interface Pet {
+    
+  }
+  ```
 
